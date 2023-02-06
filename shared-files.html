@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!--
+* CoreUI Pro based Bootstrap Admin Template
+* @version v3.0.0
+* @link https://coreui.io/pro/
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* License (https://coreui.io/pro/license)
+-->
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Empowering</title>
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/all.min.css">
+    <!--link(href='http://hayageek.github.io/jQuery-Upload-File/4.0.11/uploadfile.css' rel='stylesheet')-->
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+      <div class="c-sidebar-brand d-md-down-none">
+        <!--svg.c-sidebar-brand-full(width="118" height="46" alt="CoreUI Logo")-->
+        <!--  use(xlink:href="assets/brand/coreui-pro.svg#full")-->
+        <!--svg.c-sidebar-brand-minimized(width="46" height="46" alt="CoreUI Logo")-->
+        <!--  use(xlink:href="assets/brand/coreui-pro.svg#signet")-->
+      </div>
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-title">PROFILE</li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html"><span class="c-sidebar-nav-icon"><i class="cil-home"></i></span><span>Home</span></a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="my-profile.html"><span class="c-sidebar-nav-icon"><i class="cil-circle"></i></span><span>My Profile</span></a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="messages.html"><span class="c-sidebar-nav-icon"><i class="cil-comment-bubble"></i></span><span>Messages</span><span class="badge bg-primary text-white message-badge-notification">2</span></a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="connect.html"><span class="c-sidebar-nav-icon"><i class="cil-people"></i></span><span>Connect</span></a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="invitations.html"><span class="c-sidebar-nav-icon"><i class="cil-send"></i></span><span>Invitations</span></a></li>
+      </ul>
+    </div>
+    <div class="c-sidebar c-sidebar-lg c-sidebar-light c-sidebar-right c-sidebar-overlaid" id="aside">
+      <button class="c-sidebar-close c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-show" responsive="true">
+        <svg class="c-icon">
+          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-x"></use>
+        </svg>
+      </button>
+      <ul class="nav nav-tabs nav-underline nav-underline-primary" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">
+            <svg class="c-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list"></use>
+            </svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+            <svg class="c-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speech"></use>
+            </svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+            <svg class="c-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+            </svg></a></li>
+      </ul>
+      <!-- Tab panes-->
+      <div class="tab-content">
+        <div class="tab-pane active" id="timeline" role="tabpanel">
+          <div class="list-group list-group-accent">
+            <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase c-small">Today</div>
+            <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
+              <div class="c-avatar float-right"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"></div>
+              <div>Meeting with <strong>Lucas</strong></div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 1 - 3pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-location-pin"></use>
+                </svg>&nbsp; Palo Alto, CA</small>
+            </div>
+            <div class="list-group-item list-group-item-accent-info">
+              <div class="c-avatar float-right"><img class="c-avatar-img" src="assets/img/avatars/4.jpg" alt="user@email.com"></div>
+              <div>Skype with <strong>Megan</strong></div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 4 - 5pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-skype"></use>
+                </svg>&nbsp; On-line</small>
+            </div>
+            <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase c-small">Tomorrow</div>
+            <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+              <div>New UI Project - <strong>deadline</strong></div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 10 - 11pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-home"></use>
+                </svg>&nbsp; creativeLabs HQ</small>
+              <div class="c-avatars-stack mt-2">
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/2.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/3.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/4.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/5.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+              </div>
+            </div>
+            <div class="list-group-item list-group-item-accent-success list-group-item-divider">
+              <div><strong>#10 Startups.Garden</strong> Meetup</div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 1 - 3pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-location-pin"></use>
+                </svg>&nbsp; Palo Alto, CA</small>
+            </div>
+            <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
+              <div><strong>Team meeting</strong></div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 4 - 6pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-home"></use>
+                </svg>&nbsp; creativeLabs HQ</small>
+              <div class="c-avatars-stack mt-2">
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/2.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/3.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/4.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/5.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane p-3" id="messages" role="tabpanel">
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+        </div>
+        <div class="tab-pane p-3" id="settings" role="tabpanel">
+          <h6>Settings</h6>
+          <div class="c-aside-options">
+            <div class="clearfix mt-4"><small><b>Option 1</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm float-right">
+                <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+            <div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix mt-3"><small><b>Option 2</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm float-right">
+                <input class="c-switch-input" type="checkbox"><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+            <div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix mt-3"><small><b>Option 3</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm float-right">
+                <input class="c-switch-input" type="checkbox"><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix mt-3"><small><b>Option 4</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm float-right">
+                <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          <hr>
+          <h6>System Utilization</h6>
+          <div class="text-uppercase mb-1 mt-4"><small><b>CPU Usage</b></small></div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="text-muted">348 Processes. 1/4 Cores.</small>
+          <div class="text-uppercase mb-1 mt-2"><small><b>Memory Usage</b></small></div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="text-muted">11444GB/16384MB</small>
+          <div class="text-uppercase mb-1 mt-2"><small><b>SSD 1 Usage</b></small></div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="text-muted">243GB/256GB</small>
+          <div class="text-uppercase mb-1 mt-2"><small><b>SSD 2 Usage</b></small></div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="text-muted">25GB/256GB</small>
+        </div>
+      </div>
+    </div>
+    <div class="c-wrapper">
+      <header class="c-header c-header-light c-header-fixed justify-content-between justify-content-lg-between align-items-center">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <svg class="c-icon c-icon-lg">
+            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+          </svg>
+        </button>
+        <button class="c-header-toggler c-class-toggler d-lg-none mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <svg class="c-icon c-icon-lg">
+            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+          </svg>
+        </button>
+        <div class="activity-group-message-info pl-3"></div>
+        <ul class="c-header-nav d-flex flex-row justify-content-end justify-self-end px-3">
+          <li class="c-header-nav-item dropdown d-md-down mx-2"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="position-relative c-sidebar-nav-icon mr-3 user-has-notifications"><i class="cil-bell"></i><span class="badge-custom"></span></span></a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
+              <div class="dropdown-header bg-primary"><strong class="text-white" id="number-notification"></strong></div>
+              <div id="notification-content"></div>
+            </div>
+          </li>
+          <li class="c-header-nav-item dropdown show-profile-header-info"><a class="d-flex align-items-center c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="c-avatar"><img class="c-avatar-img h-100 profile-avatar" src="" alt="Avatar picture"></div>
+              <p class="m-0 pl-3"><span class="name">Profile</span></p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pt-0">
+              <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="messages.html"><span class="pr-3"><i class="cil-envelope-open"></i></span> Messages</a><a class="dropdown-item delete-account-item-dropdown" href="#" data-toggle="modal" data-target="#delete-account-modal"><span class="pr-3"><i class="cil-trash"></i></span> Delete account</a><a class="dropdown-item" href="change-password.html"><span class="pr-3"><i class="cil-sync"></i></span> Change password</a>
+              <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="my-profile.html"><span class="pr-3"><i class="cil-user"></i></span> Profile</a><a class="dropdown-item" id="logout-button" href="#" rel="nofollow" data-method="delete"><span class="pr-3"><i class="cil-account-logout"></i></span> Logout</a>
+            </div>
+          </li>
+          <li class="show-header-login-button"><a class="mx-3 btn btn-outline-primary" href="login.html"><span class="pr-2"><i class="cil-user"></i></span> Login</a><a class="mx-3 btn btn-outline-primary" href="register.html"><span class="pr-2"><i class="cil-user-follow"></i></span> Register</a></li>
+        </ul>
+      </header>
+      <div class="fade" id="delete-account-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-delete-account" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Delete account</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close" id="close-modal-create-group"><span class="text-dark" aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body"> Are you sure you want to detele your account? This cannot be undone.</div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-danger" id="delete-account-button" type="button">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-body">
+        <main class="c-main">
+          <div class="fade-in">
+            <div class="row no-gutters">
+              <div class="col-12 col-xl-9">
+                <div class="row no-gutters">
+                  <div class="col-sm-12 col-xl-12 main-content p-0">
+                    <div class="div cover-photo d-flex align-items-center justify-content-center position-relative"></div>
+                  </div>
+                </div>
+                <div class="row px-3 no-gutters cover-details pb-5">
+                  <div class="col-sm-12 col-xl-4 main-content mb-sm-3 mb-md-0">
+                    <div class="profile-placeholder ml-3 position-absolute d-none"></div>
+                    <div class="profile-pic ml-3 position-absolute"><img class="profile-picture"></div>
+                  </div>
+                  <div class="col-sm-12 col-xl-8 mt-5 mt-xl-0 main-content px-3 pt-5 d-flex flex-column justify-content-center">
+                    <div class="div d-flex flex-row justify-content-between">
+                      <h3 class="text-left mt-sm-3 mt-xl-0 user-name"></h3>
+                      <button class="bg-transparent border-0 edit-info-button" type="button" data-toggle="modal" data-target="#editDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                          <defs>
+                            <style>
+                              .stroke {
+                                fill: none;
+                                stroke: transparent;
+                              }
+
+                              .b {
+                                fill: #808e9b;
+                              }
+                            </style>
+                          </defs>
+                          <g transform="translate(-1318 -447)">
+                            <rect class="stroke" width="32" height="32" rx="4" transform="translate(1318 447)"></rect>
+                            <circle class="b" cx="2" cy="2" r="2" transform="translate(1326 461)"></circle>
+                            <circle class="b" cx="2" cy="2" r="2" transform="translate(1332 461)"></circle>
+                            <circle class="b" cx="2" cy="2" r="2" transform="translate(1338 461)"></circle>
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="modal fade" id="editDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Edit details modal</h5>
+                              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="text-dark" aria-hidden="true">×</span></button>
+                            </div>
+                            <div class="modal-body">
+                              <form id="edit-user-info">
+                                <h5 class="text-muted">User Information</h5>
+                                <div class="row mt-4">
+                                  <div class="col-12">
+                                    <h6 class="text-muted">Upload your profile picture</h6>
+                                    <input id="edit-profile-picture-input" type="file" style="display: none" name="attachment" accept="image/*">
+                                    <label class="custom-file-upload-label btn btn-primary mr-3" for="edit-profile-picture-input">Browse photo</label><span id="file-name-profile-picture-edit"></span>
+                                  </div>
+                                </div>
+                                <div class="row mt-3">
+                                  <div class="col-12 d-flex align-items-center justify-content-start">
+                                    <input class="w-auto" id="email-checkbox" type="checkbox"><span class="pl-3">Show e-mail on profile</span>
+                                  </div>
+                                </div>
+                                <div class="row mt-3">
+                                  <div class="col-12"><span>Name</span>
+                                    <input class="form-control pl-2" id="edit-details-name" type="text" placeholder="Existing surname" aria-label="Surname" aria-describedby="basic-addon1">
+                                  </div>
+                                </div>
+                                <div class="row mt-3 border-bottom-secondary">
+                                  <div class="col-6"><span>Country</span>
+                                    <input class="form-control pl-2" id="edit-details-country" type="text" placeholder="Country" aria-label="Name" aria-describedby="basic-addon1">
+                                  </div>
+                                  <div class="col-6"><span>City</span>
+                                    <input class="form-control pl-2" id="edit-details-city" type="text" placeholder="City" aria-label="Name" aria-describedby="basic-addon1">
+                                  </div>
+                                </div>
+                                <div class="row mt-4">
+                                  <div class="col-3 pr-0">
+                                    <h5 class="text-muted">Focus area</h5>
+                                  </div>
+                                  <div class="col-9 pl-0">
+                                    <p class="text-muted">Please select a minimum of 3 focus areas</p>
+                                  </div>
+                                </div>
+                                <div class="row mb-4 domains-list">
+                                  <div class="col-md-6" id="check-domain">
+                                    <input class="w-25" id="domain-checkbox" type="checkbox"><span id="domain-name"></span>
+                                  </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">SUBMIT</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div text-dark row align-items-center px-3">
+                      <div><i class="cil-user"></i><span class="font-weight-bold mr-4 user-type">Informal User</span></div>
+                      <div><i class="cil-location-pin"></i><span class="font-weight-bold mr-4"><span class="user-location"></span></span></div>
+                      <div><span class="ml-2 font-weight-bold user-email">website.com</span></div>
+                    </div>
+                    <div class="div mt-2 user-domains"></div>
+                  </div>
+                </div>
+                <h4 class="text-muted mt-3 px-5">Shared files</h4>
+                <div class="row mt-4 no-gutters px-5 justify-content-between flex-sm-column flex-lg-row">
+                  <div class="col col-sm-12 col-xl-4 mb-2">
+                    <div></div>
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#shared-fiels" id="add-new-shared-files"><span>Add New</span></button>
+                    <div class="modal fade" id="shared-fiels" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Shared files</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="text-dark" aria-hidden="true">×</span></button>
+                          </div>
+                          <form class="p-3" id="shared-file-upload-form">
+                            <input id="shared-file-upload-input" type="file" style="display: none" name="attachment" multiple="">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <label class="custom-file-upload-label choose-file-shared-files d-flex align-items-center justify-content-center" for="shared-file-upload-input">
+                                  <div>
+                                    <div class="text-center mb-3"><i class="cil-cloud-download"></i></div>
+                                    <div class="text-center">Click here to upload<br>your file</div>
+                                  </div>
+                                </label>
+                              </div>
+                              <div class="col-sm-6 text-wrap">
+                                <p class="d-flex align-items-center file-name-attachment"><span class="d-none file-icon"><i class="cil-file"></i></span><span id="file-name"></span></p>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                              <!--button.btn.btn-primary(type='button') Save changes-->
+                              <button class="btn btn-primary" id="btnSubmit" type="submit">Submit</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-12">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend search-files"><span class="input-group-text bg-transparent border-right-0 px-2" id="basiaddon1"><i class="cil-search"></i></span></div>
+                      <input class="form-control border-left-0 pl-0" id="filter-table" type="text" placeholder="Search files" aria-label="Username" aria-describedby="basiaddon1">
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col">
+                    <table class="table px-3" id="tableFiles">
+                      <tbody>
+                        <tr>
+                          <th onclick="sortTable(0)"><span class="mr-2">Name</span><i class="cil-chevron-top chevron-top"></i></th>
+                          <th onclick="sortTable(1)"><span class="mr-2">Owner</span><i class="cil-chevron-top chevron-top"></i></th>
+                          <th onclick="sortTable(2)"><span class="mr-2">Date added</span>
+                            <button class="bg-transparent border-0 delete-row"></button><i class="cil-chevron-top chevron-top"></i>
+                          </th>
+                          <th>Action</th>
+                        </tr>
+                        <tr id="content-shared-file">
+                          <td>
+                            <div class="row no-gutters align-items-center pb-3">
+                              <div class="col-auto"><i class="icon cil-file"></i></div>
+                              <div class="col"><span class="pl-3" id="name-file">Filename.extension</span></div>
+                            </div>
+                          </td>
+                          <td id="file-owner">me</td>
+                          <td id="file-add-date">16.03.2020</td>
+                          <td><i class="cil-share-alt mr-2 share" id="share-file-icon" data-toggle="modal" data-target="#share-modal"></i>
+                            <button class="bg-transparent border-0 i cil-trash text-danger trash delete-row" id="delete-file-button" data-toggle="modal" data-target="#delete-modal"></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Delete file</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="text-dark" aria-hidden="true">×</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row px-3">
+                              <h5 class="text-muted">Are you sure you want to delete this attachment?</h5>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-danger" id="delete-file" type="button">Delete</button>
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="share-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Share your file with</h5>
+                            <button class="close text-dark" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend search-files"><span class="input-group-text bg-transparent border-right-0 px-2" id="basiaddon2"><i class="cil-search"></i></span></div>
+                              <input class="form-control border-left-0 pl-0" id="filter-connections" type="text" placeholder="Search files" aria-label="Username" aria-describedby="basiaddon1">
+                            </div>
+                            <div id="modal-share-with-connections-wrapper"></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="c-sidebar-nav right-sidebar-members-menu d-none d-xl-block">
+                  <div id="connection-template-chat-list"></div>
+                </div>
+                <div class="user-list-bottom-box d-none d-xl-block"></div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!--include ../_partials/footer.pug-->
+      </div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
+    <!--[if IE]><!-->
+    <script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    <script src="vendors/jquery/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="js/custom/jquery.cookie.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar/navbar.js"></script>
+    <script src="js/custom/group-profile.js"></script>
+    <script src="js/custom/shared-files.js"></script>
+    <!--script(src="js/custom/profile.js")-->
+
+  </body>
+</html>

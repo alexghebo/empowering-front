@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!--
+* CoreUI Pro based Bootstrap Admin Template
+* @version v3.0.0
+* @link https://coreui.io/pro/
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* License (https://coreui.io/pro/license)
+-->
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Empowering</title>
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/all.min.css">
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+      <div class="c-sidebar-brand d-md-down-none">
+        <!--svg.c-sidebar-brand-full(width="118" height="46" alt="CoreUI Logo")-->
+        <!--  use(xlink:href="assets/brand/coreui-pro.svg#full")-->
+        <!--svg.c-sidebar-brand-minimized(width="46" height="46" alt="CoreUI Logo")-->
+        <!--  use(xlink:href="assets/brand/coreui-pro.svg#signet")-->
+      </div>
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-title">PROFILE</li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html"><span class="c-sidebar-nav-icon"><i class="cil-home"></i></span><span>Home</span></a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="my-profile.html"><span class="c-sidebar-nav-icon"><i class="cil-circle"></i></span><span>My Profile</span></a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="messages.html"><span class="c-sidebar-nav-icon"><i class="cil-comment-bubble"></i></span><span>Messages</span></a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="connect.html"><span class="c-sidebar-nav-icon"><i class="cil-people"></i></span><span>Connect</span></a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="invitations.html"><span class="c-sidebar-nav-icon"><i class="cil-send"></i></span><span>Invitations</span></a></li>
+      </ul>
+    </div>
+    <div class="c-sidebar c-sidebar-lg c-sidebar-light c-sidebar-right c-sidebar-overlaid" id="aside">
+      <button class="c-sidebar-close c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-show" responsive="true">
+        <svg class="c-icon">
+          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-x"></use>
+        </svg>
+      </button>
+      <ul class="nav nav-tabs nav-underline nav-underline-primary" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">
+            <svg class="c-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list"></use>
+            </svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+            <svg class="c-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speech"></use>
+            </svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+            <svg class="c-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+            </svg></a></li>
+      </ul>
+      <!-- Tab panes-->
+      <div class="tab-content">
+        <div class="tab-pane active" id="timeline" role="tabpanel">
+          <div class="list-group list-group-accent">
+            <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase c-small">Today</div>
+            <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
+              <div class="c-avatar float-right"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"></div>
+              <div>Meeting with <strong>Lucas</strong></div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 1 - 3pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-location-pin"></use>
+                </svg>&nbsp; Palo Alto, CA</small>
+            </div>
+            <div class="list-group-item list-group-item-accent-info">
+              <div class="c-avatar float-right"><img class="c-avatar-img" src="assets/img/avatars/4.jpg" alt="user@email.com"></div>
+              <div>Skype with <strong>Megan</strong></div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 4 - 5pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-skype"></use>
+                </svg>&nbsp; On-line</small>
+            </div>
+            <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase c-small">Tomorrow</div>
+            <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+              <div>New UI Project - <strong>deadline</strong></div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 10 - 11pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-home"></use>
+                </svg>&nbsp; creativeLabs HQ</small>
+              <div class="c-avatars-stack mt-2">
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/2.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/3.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/4.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/5.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+              </div>
+            </div>
+            <div class="list-group-item list-group-item-accent-success list-group-item-divider">
+              <div><strong>#10 Startups.Garden</strong> Meetup</div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 1 - 3pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-location-pin"></use>
+                </svg>&nbsp; Palo Alto, CA</small>
+            </div>
+            <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
+              <div><strong>Team meeting</strong></div><small class="text-muted mr-3">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                </svg>&nbsp; 4 - 6pm</small><small class="text-muted">
+                <svg class="c-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-home"></use>
+                </svg>&nbsp; creativeLabs HQ</small>
+              <div class="c-avatars-stack mt-2">
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/2.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/3.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/4.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/5.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane p-3" id="messages" role="tabpanel">
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+            </div>
+            <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+        </div>
+        <div class="tab-pane p-3" id="settings" role="tabpanel">
+          <h6>Settings</h6>
+          <div class="c-aside-options">
+            <div class="clearfix mt-4"><small><b>Option 1</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm float-right">
+                <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+            <div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix mt-3"><small><b>Option 2</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm float-right">
+                <input class="c-switch-input" type="checkbox"><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+            <div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix mt-3"><small><b>Option 3</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm float-right">
+                <input class="c-switch-input" type="checkbox"><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix mt-3"><small><b>Option 4</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm float-right">
+                <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          <hr>
+          <h6>System Utilization</h6>
+          <div class="text-uppercase mb-1 mt-4"><small><b>CPU Usage</b></small></div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="text-muted">348 Processes. 1/4 Cores.</small>
+          <div class="text-uppercase mb-1 mt-2"><small><b>Memory Usage</b></small></div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="text-muted">11444GB/16384MB</small>
+          <div class="text-uppercase mb-1 mt-2"><small><b>SSD 1 Usage</b></small></div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="text-muted">243GB/256GB</small>
+          <div class="text-uppercase mb-1 mt-2"><small><b>SSD 2 Usage</b></small></div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="text-muted">25GB/256GB</small>
+        </div>
+      </div>
+    </div>
+    <div class="c-wrapper">
+      <header class="c-header c-header-light c-header-fixed justify-content-between justify-content-lg-end">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <svg class="c-icon c-icon-lg">
+            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+          </svg>
+        </button>
+        <button class="c-header-toggler c-class-toggler d-lg-none mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <svg class="c-icon c-icon-lg">
+            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+          </svg>
+        </button>
+        <ul class="c-header-nav d-flex flex-row justify-content-end justify-self-end px-3">
+          <li class="c-header-nav-item dropdown d-md-down-none mx-2"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="position-relative c-sidebar-nav-icon mr-3"><i class="cil-cog"></i></span></a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
+              <div class="dropdown-header bg-light"><strong>You have 5 notifications</strong></div><a class="dropdown-item" href="#"><i class="cil-user-follow"></i> New user registered</a><a class="dropdown-item" href="#"><i class="cil-user-unfollow"></i> User deleted</a>
+            </div>
+          </li>
+          <li class="c-header-nav-item dropdown d-md-down-none mx-2"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="position-relative c-sidebar-nav-icon mr-3 user-has-notifications"><i class="cil-bell"></i><span class="badge-custom"></span></span></a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
+              <div class="dropdown-header bg-light"><strong>You have 5 notifications</strong></div><a class="dropdown-item" href="#"><i class="cil-user-follow"></i> New user registered</a><a class="dropdown-item" href="#"><i class="cil-user-unfollow"></i> User deleted</a>
+            </div>
+          </li>
+          <li class="c-header-nav-item dropdown show-profile-header-info"><a class="d-flex align-items-center c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+              <p class="m-0 pl-3"><span class="name">Profile</span><span class="surname ml-1">Name</span></p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pt-0">
+              <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#"><span class="pr-3"><i class="cil-bell"></i></span> Updates<span class="badge badge-info mfs-auto">42</span></a><a class="dropdown-item" href="messages.html"><span class="pr-3"><i class="cil-envelope-open"></i></span> Messages<span class="badge badge-success mfs-auto">42</span></a><a class="dropdown-item" href="#"><span class="pr-3"><i class="cil-task"></i></span> Tasks<span class="badge badge-danger mfs-auto">42</span></a><a class="dropdown-item" href="#"><span class="pr-3"><i class="cil-comment-square"></i></span> Comments<span class="badge badge-warning mfs-auto">42</span></a>
+              <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#"><span class="pr-3"><i class="cil-user"></i></span> Profile</a><a class="dropdown-item" href="my-profile.html"><span class="pr-3"><i class="cil-settings"></i></span> Settings</a><a class="dropdown-item" id="logout-button" href="#" rel="nofollow" data-method="delete"><span class="pr-3"><i class="cil-account-logout"></i></span> Logout</a>
+            </div>
+          </li>
+          <li class="show-header-login-button"><a class="mx-3 btn btn-outline-primary" href="login.html"><span class="pr-2"><i class="cil-user"></i></span> Login</a><a class="mx-3 btn btn-outline-primary" href="register.html"><span class="pr-2"><i class="cil-user-follow"></i></span> Register</a></li>
+        </ul>
+      </header>
+      <div class="c-body">
+        <main class="c-main">
+          <div class="fade-in">
+            <div class="row no-gutters">
+              <div class="col-12 col-xl-9">
+                <div class="container-fluid p-0">
+                  <div class="row no-gutters">
+                    <div class="col-sm-12 col-xl-12 main-content p-0">
+                      <div class="div cover-photo d-flex align-items-center justify-content-center position-relative"></div>
+                    </div>
+                  </div>
+                  <div class="row px-3 no-gutters cover-details pb-5">
+                    <div class="col-sm-12 col-xl-4 main-content mb-sm-3 mb-md-0">
+                      <div class="div profile-picture ml-3 position-absolute"></div>
+                    </div>
+                    <div class="col-sm-12 col-xl-8 mt-5 mt-xl-0 main-content px-3 pt-3 d-flex flex-column justify-content-center">
+                      <div class="div d-flex flex-row justify-content-between">
+                        <h3 class="text-left mt-sm-3 mt-xl-0">John Doe</h3>
+                        <button class="btn btn-primary"><span>Connect</span></button>
+                      </div>
+                      <div class="div text-dark d-flex align-items-center"><i class="cil-user"></i><span class="font-weight-bold mr-4">Informal User</span><i class="cil-location-pin"></i><span class="font-weight-bold mr-4">Berlin, Germany</span><span class="ml-2 font-weight-bold">website.com</span></div>
+                      <div class="div mt-2"><span class="badge badge-pill badge-secondary ml-2">Education</span><span class="badge badge-pill badge-secondary ml-2">Ethnic minorities</span><span class="badge badge-pill badge-secondary ml-2">Ethnic minorities</span></div>
+                    </div>
+                  </div>
+                  <div class="row mt-3 no-gutters px-3">
+                    <div class="col-sm-12 col-xl-4 main-content px-3">
+                      <div class="card">
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                          <h6 class="m-0">About</h6>
+                        </div>
+                        <div class="card-body">
+                          <div class="row no-gutters">
+                            <div class="col-12 col-md">
+                              <p>Introduction test lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                              <div class="div mt-5 d-flex flex-row justify-content-between">
+                                <p>Resource name</p>
+                                <p>Value</p>
+                              </div>
+                              <div class="div d-flex flex-row justify-content-between">
+                                <p>Resource name</p>
+                                <p>Value</p>
+                              </div>
+                              <div class="div d-flex flex-row justify-content-between">
+                                <p>Resource name</p>
+                                <p>Value</p>
+                              </div>
+                              <div class="div d-flex flex-row justify-content-between">
+                                <p>Resource name</p>
+                                <p>Value</p>
+                              </div>
+                              <div class="div d-flex flex-row justify-content-between">
+                                <p>Resource name</p>
+                                <p>Value</p>
+                              </div>
+                              <div class="div d-flex flex-row justify-content-between">
+                                <p>Resource name</p>
+                                <p>Value</p>
+                              </div>
+                              <div class="div d-flex flex-row justify-content-between">
+                                <p>Resource name</p>
+                                <p>Value</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                          <h6 class="m-0">Connections</h6>
+                        </div>
+                        <div class="card-body pb-0">
+                          <ul class="list-group list-group-flush m-0">
+                            <li class="list-group-item p-0 pb-3">
+                              <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-auto">
+                                  <div class="icon-wrapper">
+                                    <div class="icon-user-circle">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19">
+                                        <defs>
+                                          <style>
+                                            .a {
+                                              fill: none;
+                                              stroke: #1e272e;
+                                              stroke-linecap: round;
+                                              stroke-linejoin: round;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <g transform="translate(-5.5 -4)">
+                                          <path class="a" d="M22,28.5v-2a4,4,0,0,0-4-4H10a4,4,0,0,0-4,4v2" transform="translate(0 -6)"></path>
+                                          <path class="a" d="M20,8.5a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z" transform="translate(-2 0)"></path>
+                                        </g>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col"><span class="pl-3">Name Surname</span></div>
+                              </div>
+                            </li>
+                            <li class="list-group-item p-0 py-3">
+                              <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-auto">
+                                  <div class="icon-wrapper">
+                                    <div class="icon-user-circle">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19">
+                                        <defs>
+                                          <style>
+                                            .a {
+                                              fill: none;
+                                              stroke: #1e272e;
+                                              stroke-linecap: round;
+                                              stroke-linejoin: round;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <g transform="translate(-5.5 -4)">
+                                          <path class="a" d="M22,28.5v-2a4,4,0,0,0-4-4H10a4,4,0,0,0-4,4v2" transform="translate(0 -6)"></path>
+                                          <path class="a" d="M20,8.5a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z" transform="translate(-2 0)"></path>
+                                        </g>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col"><span class="pl-3">Name Surname</span></div>
+                              </div>
+                            </li>
+                            <li class="list-group-item p-0 py-3">
+                              <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-auto">
+                                  <div class="icon-wrapper">
+                                    <div class="icon-user-circle">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19">
+                                        <defs>
+                                          <style>
+                                            .a {
+                                              fill: none;
+                                              stroke: #1e272e;
+                                              stroke-linecap: round;
+                                              stroke-linejoin: round;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <g transform="translate(-5.5 -4)">
+                                          <path class="a" d="M22,28.5v-2a4,4,0,0,0-4-4H10a4,4,0,0,0-4,4v2" transform="translate(0 -6)"></path>
+                                          <path class="a" d="M20,8.5a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z" transform="translate(-2 0)"></path>
+                                        </g>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col"><span class="pl-3">Name Surname</span></div>
+                              </div>
+                            </li>
+                            <li class="list-group-item p-0 py-3 d-flex justify-content-end"><a href="#">See more</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                          <h6 class="m-0">Shared files</h6>
+                        </div>
+                        <div class="card-body pb-0">
+                          <ul class="list-group list-group-flush m-0">
+                            <li class="list-group-item p-0">
+                              <div class="row no-gutters align-items-center pb-3">
+                                <div class="col-auto"><i class="icon cil-file"></i></div>
+                                <div class="col"><span class="pl-3">Filename.extension</span></div>
+                              </div>
+                            </li>
+                            <li class="list-group-item p-0 pt-3">
+                              <div class="row no-gutters align-items-center pb-3">
+                                <div class="col-auto"><i class="icon cil-file"></i></div>
+                                <div class="col"><span class="pl-3">Filename.extension</span></div>
+                              </div>
+                            </li>
+                            <li class="list-group-item p-0 pt-3">
+                              <div class="row no-gutters align-items-center pb-3">
+                                <div class="col-auto"><i class="icon cil-file"></i></div>
+                                <div class="col"><span class="pl-3">Filename.extension</span></div>
+                              </div>
+                            </li>
+                            <li class="list-group-item p-0 pt-3">
+                              <div class="row no-gutters align-items-center pb-3">
+                                <div class="col-auto"><i class="icon cil-file"></i></div>
+                                <div class="col"><span class="pl-3">Filename.extension</span></div>
+                              </div>
+                            </li>
+                            <li class="list-group-item p-0 pt-3">
+                              <div class="row no-gutters align-items-center pb-3">
+                                <div class="col-auto"><i class="icon cil-file"></i></div>
+                                <div class="col"><span class="pl-3">Filename.extension</span></div>
+                              </div>
+                            </li>
+                            <li class="list-group-item p-0 py-3 d-flex justify-content-end"><a href="#">See more</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-8 main-content px-3">
+                      <div class="card">
+                        <div class="card-body p-0">
+                          <div class="row no-gutters align-items-center">
+                            <div class="col-auto pl-3 pt-3">
+                              <div class="icon-user-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19">
+                                  <defs>
+                                    <style>
+                                      .a {
+                                        fill: none;
+                                        stroke: #1e272e;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <g transform="translate(-5.5 -4)">
+                                    <path class="a" d="M22,28.5v-2a4,4,0,0,0-4-4H10a4,4,0,0,0-4,4v2" transform="translate(0 -6)"></path>
+                                    <path class="a" d="M20,8.5a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z" transform="translate(-2 0)"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="col px-3 pt-3 d-flex flex-row justify-content-between">
+                              <div class="d-flex flex-column">
+                                <h6 class="font-weight-bold m-0">User Name</h6><span class="text-muted">Date Posted</span>
+                              </div>
+                            </div>
+                            <div class="p-3">
+                              <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="w-100" style="height: 300px; background-color: #dddddd;"></div>
+                            <div class="p-3"></div><span><i class="icon icon-heart-like cil-heart"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body p-0">
+                          <div class="row no-gutters align-items-center">
+                            <div class="col-auto pl-3 pt-3">
+                              <div class="icon-user-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19">
+                                  <defs>
+                                    <style>
+                                      .a {
+                                        fill: none;
+                                        stroke: #1e272e;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <g transform="translate(-5.5 -4)">
+                                    <path class="a" d="M22,28.5v-2a4,4,0,0,0-4-4H10a4,4,0,0,0-4,4v2" transform="translate(0 -6)"></path>
+                                    <path class="a" d="M20,8.5a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z" transform="translate(-2 0)"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="col px-3 pt-3 d-flex flex-row justify-content-between">
+                              <div class="d-flex flex-column">
+                                <h6 class="font-weight-bold m-0">User Name</h6><span class="text-muted">Date Posted</span>
+                              </div>
+                            </div>
+                            <div class="p-3">
+                              <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="w-100" style="height: 300px; background-color: #dddddd;"></div>
+                            <div class="p-3"></div><span><i class="icon icon-heart-like cil-heart"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body p-0">
+                          <div class="row no-gutters align-items-center">
+                            <div class="col-auto pl-3 pt-3">
+                              <div class="icon-user-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19">
+                                  <defs>
+                                    <style>
+                                      .a {
+                                        fill: none;
+                                        stroke: #1e272e;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <g transform="translate(-5.5 -4)">
+                                    <path class="a" d="M22,28.5v-2a4,4,0,0,0-4-4H10a4,4,0,0,0-4,4v2" transform="translate(0 -6)"></path>
+                                    <path class="a" d="M20,8.5a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z" transform="translate(-2 0)"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="col px-3 pt-3 d-flex flex-row justify-content-between">
+                              <div class="d-flex flex-column">
+                                <h6 class="font-weight-bold m-0">User Name</h6><span class="text-muted">Date Posted</span>
+                              </div>
+                            </div>
+                            <div class="p-3">
+                              <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="w-100" style="height: 300px; background-color: #dddddd;"></div>
+                            <div class="p-3"></div><span><i class="icon icon-heart-like cil-heart"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="c-sidebar-nav right-sidebar-members-menu d-none d-xl-block">
+                  <div class="connection-template"></div>
+                </div>
+                <div class="user-list-bottom-box d-none d-xl-block"></div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!--include ../_partials/footer.pug-->
+      </div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
+    <!--[if IE]><!-->
+    <script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    <script src="vendors/jquery/js/jquery.min.js"></script>
+    <script src="js/custom/jquery.cookie.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar/navbar.js"></script>
+    <script src="js/custom/profile.js"></script>
+
+  </body>
+</html>

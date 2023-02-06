@@ -1,0 +1,306 @@
+.c-app .c-sidebar,
+.c-app .c-sidebar .c-sidebar-brand {
+	background-color: #1E272E;
+}
+
+.c-app .c-sidebar .c-sidebar-nav-link,
+.c-app .c-sidebar .c-sidebar-nav-link .c-sidebar-nav-icon {
+	color: #F06130;	
+}
+
+.c-app .c-sidebar .c-sidebar-nav-item.active-option .c-sidebar-nav-link,
+.c-app .c-sidebar .c-sidebar-nav-item.active-option .c-sidebar-nav-link .c-sidebar-nav-icon {
+	color: #1CACE3;	
+}
+
+.c-app .c-sidebar .c-sidebar-nav-title {
+	color: #19A8A0;
+}
+
+
+/***********************************/
+/************* HEADER **************/
+/***********************************/
+
+header.c-header {
+	background-color: #1E272E;
+}
+
+header.c-header .c-sidebar-nav-icon	i {
+	color: #1CACE3;
+}
+
+header.c-header .show-profile-header-info span.name {
+	color: #F06130;
+}
+
+header.c-header .badge-custom {
+	background-color: #E7165D;
+}
+
+header.c-header .icon-user-circle {
+	border-color: #1CACE3;
+}
+
+/***********************************/
+/*********** GENERAL ************/
+/***********************************/
+
+.card .card-header {
+	background-color: #1E272E;
+	color: #F06130;
+}
+
+.card .card-body {
+	background-color: #D2DAE2;
+	color: #1E272E;
+}
+
+/***********************************/
+/*********** MY PROFILE ************/
+/***********************************/
+
+h3.user-name {
+	color: #F06130;
+}
+
+.cover-photo {
+	background-color: #808E9B;
+}
+
+.profile-placeholder {
+	background-color: #1CACE3;
+}
+
+.profile-info-short {
+	color: #1CACE3;
+}
+
+.cover-details {
+	background-color: #1E272E;
+}
+
+/***********************************/
+/*********** MESSAGES ************/
+/***********************************/
+
+.message-page-wrapper, .right-sidebar-members-menu {
+	background-color: #2B343B;
+}
+
+.message-page-wrapper .user-name-wrapper .user-name {
+	color: #F06130;
+}
+
+.message-page-wrapper .message-title {
+	color: #1CACE3;
+}
+
+#search-users-input {
+	background-color: #2B343B;
+}
+
+#messages-list-item.active {
+	background-color: #485460;
+}
+
+#messages-list-item.active .user-name {
+	color: #1CACE3;
+}
+
+#chat-menu-user-name {
+	color: #F06130;
+}
+
+#sidebar-info-chat {
+	background-color: #2B343B;
+}
+
+#messages-user-info-name a {
+	color: #F06130;
+}
+
+#messages-user-info-website {
+	color: #1CACE3;
+}
+
+.user-profile-focus-title {
+	color: #F06130;
+}
+
+#messages-user-info-domains .messages-user-info-badge {
+	color: #1D99C9;
+	background-color: #1E272E;
+}
+
+.user-profile-shared-title {
+	color: #1CACE3;
+}
+
+.user-type-message, #send-message-input {
+	background-color: #1E272E;
+}
+
+#send-message {
+	color: #F06130;
+}
+.send-attachment{
+	color: #F06130 !important;
+	cursor: pointer !important;
+	font-size: 18px !important;
+}
+
+#create-group-modal .modal-dialog .modal-content {
+	background-color: #2B343B;
+}
+
+#create-group-modal .modal-dialog .modal-content .modal-header {
+	background-color: #1E272E;
+}
+
+#create-group-modal .modal-dialog .modal-content .modal-header .modal-title {
+	color: #F06130;
+}
+
+#create-group-modal .modal-dialog .modal-content .modal-body .form-lbl {
+	color: #F06130;
+}
+
+#create-group-modal .modal-dialog .modal-content .modal-body .form-control {
+	background-color: #2B343B;
+	color: #1CACE3;
+}
+
+#create-group-modal .modal-dialog .modal-content .modal-body .form-control::placeholder { 
+  color: #1CACE3;
+  opacity: 1; 
+}
+
+#create-group-modal .modal-dialog .modal-content .modal-footer button { 
+  background-color: #E7165D;
+}
+
+#create-group-modal .modal-dialog .modal-content #content-user-group {
+	color: #1CACE3;
+}
+
+/***********************************/
+/*********** REGISTER PAGE *********/
+/***********************************/
+
+.register-page .card .card-body,
+.card-select-user-type {
+	background-color: #F06130;
+	border: none !important;
+}
+.register-page .icon-user-type {
+	color: #ffffff;
+}
+.register-page .user-type-title {
+	font-size: 20px;
+}
+.register-page .card {
+	margin-bottom: 10px;
+}
+
+.c-app.register-page, .c-app.register-page #regForm {
+	background-color: #2B343B !important;
+}
+
+.c-app.register-page .main-title, .c-app.register-page .user-type-title {
+	color: #1CACE3;
+}
+
+.card-select-user-type.active {
+	border: none;
+	background-color: #F8FCFF;
+	color: #ffffff;
+}
+
+#nextBtn {
+	background-color: #F06130;
+}
+
+#prevBtn {
+	background-color: #19A8A0;
+	color: #2B343B;
+}
+
+.register-steps .step.active {
+	background-color: #F06130;
+}
+
+.register-tab h1, 
+.resources-tab h1,
+.focus-areas-tab h1 {
+	color: #1F92C0;
+}
+
+.resources-tab #resource-name {
+	color: #F06130;
+}
+
+/*.c-app.register-page .card-user-type {
+	background-color: #F06130;
+}*/
+
+/***********************************/
+/*********** SHARED FILES *********/
+/***********************************/
+
+#shared-fiels .modal-dialog .modal-content {
+	background-color: #2B343B;
+}
+
+#shared-fiels .modal-dialog .modal-content .modal-header {
+	background-color: #1E272E;
+}
+
+#shared-fiels .modal-dialog .modal-content .modal-header .modal-title {
+	color: #F8FCFF;
+}
+
+#shared-fiels .modal-dialog .modal-content .custom-file-upload-label {
+	background-color: #1E272E;
+	color: #F06130;
+}
+
+#shared-fiels .modal-dialog .modal-content .file-name-attachment #file-name {
+	color: #1CACE3;
+}
+
+button.btn-primary {
+	background-color: #F06130;
+}
+
+button.btn-facebook{
+	background-color:#4267B2 !important;
+	color:#ffffff;
+	height: 25px !important;
+	width: auto !important;
+	padding-top: 0.5px !important;
+	padding-bottom: 0.5px !important;
+	padding-left: 6px !important;
+	padding-right: 6px !important ;
+}
+
+button.btn-primary:hover {
+	background-color: #1CACE3;
+}
+
+.anchor-user-profile {
+	color: #F06130;
+}
+
+.anchor-user-profile:hover {
+	color: #1CACE3;
+}
+
+.c-app .c-sidebar .c-sidebar-nav-link.c-active,
+.c-app .c-sidebar .c-sidebar-nav-link.c-active .c-sidebar-nav-icon {
+	color: #1CACE3 !important;
+}
+
+#user-member-name {
+	color: #1CACE3 !important;
+}

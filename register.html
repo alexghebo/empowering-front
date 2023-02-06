@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+* CoreUI Pro based Bootstrap Admin Template
+* @version v3.0.0
+* @link https://coreui.io/pro/
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* License (https://coreui.io/pro/license)
+-->
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Empowering</title>
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/all.min.css">
+  </head>
+  <body class="c-app flex-row align-items-center register-page">
+    <div class="container">
+      <form id="regForm">
+        <!-- One "tab" for each step in the form:-->
+        <div class="tab">
+          <h2 class="mb-5 ml-3 main-title">Welcome<br> Please select </h2>
+          <input type="hidden" id="selected-user-type-input">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-3">
+              <div class="card-user-type d-flex flex-column align-items-center">
+                <div class="card card-select-user-type" id="single-user-card">
+                  <div class="card-body">
+                    <i class="icon-user-type cil-user"></i>
+                    <a href="icons/icon-user-register.png"></a>
+                  </div>
+                </div>
+                <p class="user-type-title">Single User</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card-user-type d-flex flex-column align-items-center">
+                <div class="card card-select-user-type" id="informal-group-card">
+                  <div class="card-body"><i class="icon-user-type cil-people"></i></div>
+                </div>
+                <p class="user-type-title">Informal Group</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card-user-type d-flex flex-column align-items-center">
+                <div class="card card-select-user-type" id="ngo-card">
+                  <div class="card-body"><i class="icon-user-type cil-home"></i></div>
+                </div>
+                <p class="user-type-title">NGO</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card-user-type d-flex flex-column align-items-center">
+                <div class="card card-select-user-type" id="public-institution">
+                  <div class="card-body"><i class="icon-user-type cil-institution"></i></div>
+                </div>
+                <p class="user-type-title">Public Institution</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab register-tab">
+          <h1>Register <br> Create your account</h1>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="cil-user"></i></span></div>
+            <input class="form-control pl-2" id="name" type="text" placeholder="Profile name" required="">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="cil-envelope-closed"></i></span></div>
+            <input class="form-control pl-2" id="email" type="email" placeholder="Email" required="">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="cil-location-pin"></i></span></div>
+            <input class="form-control pl-2" id="city" type="text" placeholder="City" required="">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="cil-location-pin"></i></span></div>
+            <input class="form-control pl-2" id="country" type="text" placeholder="Country" required="">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="cil-lock-locked"></i></span></div>
+            <input class="form-control pl-2" id="password" type="password" placeholder="Password" required="">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="cil-lock-locked"></i></span></div>
+            <input class="form-control pl-2" id="confirm-password" type="password" placeholder="Confirm password" required="">
+          </div>
+        </div>
+        <div class="tab resources-tab">
+          <h1 class="mb-5 pb-5">List some of your resources</h1>
+          <div class="row resources"></div>
+        </div>
+        <div class="tab focus-areas-tab">
+          <h1 class="mb-5 pb-5">Almost there, select at least 3 focus areas</h1>
+          <div>
+            <div class="no-domain-message d-none">No domains available</div>
+            <div class="qtagselect">
+              <select class="qtagselect__select select-domains" multiple=""></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form:-->
+        <div class="register-steps" style="text-align:center;margin-top:20px;"><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span></div>
+
+        <!-- Previous & Next BTN -->
+        <div class="d-flex justify-content-center" style="overflow:auto;margin-top: 30px;">
+          <div style="float:right;">
+            <button class="btn btn-outline-dark" id="prevBtn" type="button" onclick="nextPrev(-1)"><i class="cil-arrow-left pr-2"></i><span>Previous</span></button>
+            <button class="btn btn-primary" id="nextBtn" type="button" onclick="nextPrev(1)"> <span>Next</span><i class="cil-arrow-right pl-2"></i></button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
+    <!--[if IE]><!-->
+    <script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--<![endif]-->
+    <script src="vendors/jquery/js/jquery.min.js"></script>
+    <script src="js/custom/jquery.tagselect.js"></script>
+    <script src="js/custom/jquery.cookie.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom/register.js"></script>
+
+  </body>
+</html>
